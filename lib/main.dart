@@ -68,9 +68,8 @@ class _MyHomePageState extends State<MyHomePage> {
               ),
           Material(
             borderRadius:BorderRadius.circular(20),
-            shadowColor: Colors.green,
+            shadowColor: Colors.greenAccent[700],
             color: Colors.green[200],
-            elevation: 50,
               child: Column(
               children: [
                 Text("Do's",style: GoogleFonts.lobster(
@@ -88,8 +87,9 @@ class _MyHomePageState extends State<MyHomePage> {
                     borderRadius: BorderRadius.circular(20),
                     elevation: 4,
                     child:Container( 
+                      height: 150,
               child: Row(children: [
-              Expanded(flex:3,child:Padding(
+              Expanded(flex:4,child:Padding(
                   padding: const EdgeInsets.all(5.0),
                   child: Image.asset(
                             'assets/phone.png',
@@ -129,7 +129,6 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
           SizedBox(height:30),
           Material(
-            elevation: 50,
             shadowColor: Colors.red,
             color: Colors.red[200],
             borderRadius: BorderRadius.circular(20),
@@ -184,25 +183,30 @@ class _MyHomePageState extends State<MyHomePage> {
   }
 }
 class Cards extends StatelessWidget {
-  String imageUrl;
-  String title;
+  final String imageUrl;
+  final String title;
   Cards({this.imageUrl,this.title});
   @override
   Widget build(BuildContext context) {
     return Padding(
       padding: const EdgeInsets.all(8.0),
       child: Material(
-              color: Colors.white,
-              elevation: 4,
+              // color: Colors.white,
+              elevation:10,
               borderRadius: BorderRadius.circular(20),
               child: Container(
               child: Row(children: [
-              Expanded(flex:3,child:Padding(
+              Expanded(flex:4,child:Padding(
                 padding: const EdgeInsets.all(5.0),
-                child: Image.asset(
-                          imageUrl,
-                          fit: BoxFit.contain,
-                        ),
+                child: Container(
+                  height: 150,
+                  decoration: BoxDecoration(
+                  // color: Colors.red,
+                    // shape: BoxShape.circle,
+                    borderRadius: BorderRadius.circular(60),
+                    image: DecorationImage(image: AssetImage(imageUrl),fit: BoxFit.contain),
+                  ),
+                ),
               ),),
               Expanded(flex:7,child:Padding(
                 padding: const EdgeInsets.all(8.0),
