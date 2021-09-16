@@ -101,7 +101,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text('If you have any symptoms please call state helpline number helpline at ',style: Config.titleStyle,),
+                      Text('If you have any symptoms please call helpline number helpline at ',style: Config.titleStyle,),
                       GestureDetector(
                         onTap: ()
                         {
@@ -110,7 +110,7 @@ class _MyHomePageState extends State<MyHomePage> {
                         child:Text("011-23978046",style:GoogleFonts.poppins(
                           fontWeight:FontWeight.bold,
                           decoration: TextDecoration.underline,
-                          fontSize: 20
+                          fontSize:15
                         ),
                         )
                       )
