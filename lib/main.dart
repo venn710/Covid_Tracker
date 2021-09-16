@@ -139,7 +139,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   fontWeight: FontWeight.bold
                 )
                 ),
-                Cards(imageUrl:'assets/dont1.jpg',title:'Don\'t touch your Eyes,Mouth and Nssose'),
+                Cards(imageUrl:'assets/dont1.jpg',title:'Don\'t touch your Eyes,Mouth and Nose'),
                 Cards(imageUrl:'assets/dont2.jpg',title:'Don\'t Spit in Public')
               ],
             ),
