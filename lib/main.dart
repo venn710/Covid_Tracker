@@ -96,7 +96,7 @@ class _MyHomePageState extends State<MyHomePage> {
                             fit: BoxFit.contain,
                           ),
               ),),
-              Expanded(flex:6,child:Padding(
+              Expanded(flex:8,child:Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
